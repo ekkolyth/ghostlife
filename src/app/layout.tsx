@@ -11,11 +11,11 @@ const inter = Inter({
 });
 
 // 2. Editable metadata block
-const siteTitle = 'Ekkolyth';
+const siteTitle = 'Ghostlife';
 const siteDescription =
-  "Hey! I'm Ekko. I stream and stuff, and you're welcome here <3";
-const siteURL = 'https://ekkolyth.com';
-const siteImage = `${siteURL}/og-image.png`;
+  "pop metal artist from anaheim ca";
+const siteURL = 'https://ghostlife.co';
+const siteImage = `${siteURL}/images/og-image.png`;
 
 export const metadata: Metadata = {
   title: siteTitle,

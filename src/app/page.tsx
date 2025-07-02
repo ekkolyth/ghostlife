@@ -2,8 +2,8 @@
 
 import { Button } from '@/components/ui/button';
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
-import { FaTwitch, FaTwitter, FaDiscord, FaCoffee } from 'react-icons/fa';
 import { SocialIcon } from '@/components/social-icon';
+import { PlayIcon, TwitchIcon } from 'lucide-react';
 
 export default function LinkPage() {
   return (
@@ -13,16 +13,15 @@ export default function LinkPage() {
         <div className='bg-zinc-950/50 px-6 pt-10 pb-6 text-center'>
           <Avatar className='w-20 h-20 mx-auto mb-4 border-3 '>
             <AvatarImage
-              src='/ekko.png'
-              alt='Ekkolyth avatar'
+              src='/images/ghostlife.png'
+              alt='promotional photo of the band ghostlife'
             />
-            <AvatarFallback>EK</AvatarFallback>
+            <AvatarFallback>GL</AvatarFallback>
           </Avatar>
 
-          <h1 className='text-3xl mb-4 font-bold text-white'>Ekkolyth</h1>
+          <h1 className='text-3xl mb-4 font-bold text-white'>ghostlife.</h1>
           <p className='text-md text-muted-foreground mt-1'>
-            Hey! I&apos;m Ekko. I stream and stuff, and you&apos;re welcome here
-            &lt;3
+            we.make.noise | anaheim.ca.
           </p>
 
           <div className='mt-6 space-y-3 mb-2'>
@@ -33,12 +32,12 @@ export default function LinkPage() {
               asChild
             >
               <a
-                href='https://www.twitch.tv/ekkolyth'
+                href='https://listen.ghostlife.co/defeat'
                 target='_blank'
                 rel='noopener noreferrer'
               >
-                <FaTwitch />
-                Watch Live
+                <PlayIcon />
+                listen
               </a>
             </Button>
             <Button
@@ -48,77 +47,42 @@ export default function LinkPage() {
               asChild
             >
               <a
-                href='https://twitter.com/ekkolyth'
+                href='https://www.twitch.tv/ghostlifeband'
                 target='_blank'
                 rel='noopener noreferrer'
               >
-                <FaTwitter />
-                Follow me on Twitter
-              </a>
-            </Button>
-            <Button
-              variant='ghost'
-              size='lg'
-              className='w-full justify-center'
-              asChild
-            >
-              <a
-                href='https://discord.gg/NyQZaYRcdj'
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                <FaDiscord />
-                Join my Discord
-              </a>
-            </Button>
-            <Button
-              variant='ghost'
-              size='lg'
-              className='w-full justify-center'
-              asChild
-            >
-              <a
-                href='https://ko-fi.com/ekkolyth'
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                <FaCoffee />
-                Buy me a Ko-fi
+                <TwitchIcon />
+                live
               </a>
             </Button>
           </div>
         </div>
 
         {/* Social icons bar */}
-        <div className='bg-white px-6 py-6 flex justify-center gap-5 text-zinc-700 text-2xl'>
-          <SocialIcon
-            icon='twitch'
-            href='https://twitch.tv/ekkolyth'
-            ariaLabel='Twitch'
-          />
+        <div className='bg-black px-6 py-6 flex justify-center gap-5 text-zinc-700 text-2xl'>
           <SocialIcon
             icon='youtube'
-            href='https://www.youtube.com/@ekkolyth'
+            href='https://www.youtube.com/@ghostlifeband'
             ariaLabel='YouTube'
           />
           <SocialIcon
             icon='tiktok'
-            href='https://www.tiktok.com/@ekkolyth'
+            href='https://www.tiktok.com/@ghostlifeband'
             ariaLabel='TikTok'
           />
           <SocialIcon
-            icon='twitter'
-            href='https://twitter.com/ekkolyth'
-            ariaLabel='Twitter'
-          />
-          <SocialIcon
             icon='instagram'
-            href='https://www.instagram.com/ekkolyth'
+            href='https://www.instagram.com/ghostlifeband'
             ariaLabel='Instagram'
           />
           <SocialIcon
+            icon='twitch'
+            href='https://twitch.tv/ghostlifeband'
+            ariaLabel='Twitch'
+          />
+          <SocialIcon
             icon='email'
-            href='mailto:hello@ekkolyth.com'
+            href='mailto:hello@ghostlife.co'
             ariaLabel='Email'
           />
         </div>

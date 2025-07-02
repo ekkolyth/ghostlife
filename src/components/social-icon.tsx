@@ -38,12 +38,12 @@ export function SocialIcon({ icon, href, ariaLabel }: SocialIconProps) {
   return (
     <Wrapper
       href={href}
-      className='bg-zinc-200 rounded-full p-3 hover:bg-indigo-200 transition-all duration-200'
+      className='bg-zinc-800 text-white rounded-full p-3 hover:bg-zinc-200 transition-all duration-200'
       target={href ? '_blank' : undefined}
       rel={href ? 'noopener noreferrer' : undefined}
       aria-label={ariaLabel}
     >
-      <Icon className='text-zinc-800 size-5' />
+      <Icon className='size-5' />
     </Wrapper>
   );
 }

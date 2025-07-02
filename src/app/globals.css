@@ -146,11 +146,11 @@
     bottom: 0;
     width: 100vw;
     height: 100vh;
-    background-image: url('/bg.jpg');
+    background-image: url('/images/bg.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    filter: blur(10px);
+    filter: blur(20px);
     z-index: -1;
     margin: 0;
     padding: 0;
